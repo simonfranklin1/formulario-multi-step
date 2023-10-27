@@ -1,6 +1,6 @@
-# Frontend Mentor - Multi-step form solution
+# Frontend Mentor - Multi-step form 
 
-Isso é uma solução para o desafio do Formulário 
+Isso é uma solução para o desafio do Formulário Multi-step
 
 ## Tabela de conteúdos
 
