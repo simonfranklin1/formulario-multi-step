@@ -34,7 +34,7 @@ O usuário deve ser capaz de:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site URL](https://simonfranklin1.github.io/formulario-multi-step/)
 
 ## Meu processo
 
@@ -44,6 +44,7 @@ O usuário deve ser capaz de:
 - CSS
 - Flexbox
 - Feito em mobile-first
+- Javascript
 
 ### Autor
 - Simon Franklin: [Simon Franklin](https://github.com/simonfranklin1)
