@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+  <main>
+    <div id="sidebar-mobile">
+      <span class="indicador">1</span>
+      <span class="indicador">2</span>
+      <span class="indicador">3</span>
+      <span class="indicador">4</span>
+    </div>
+
+    <div id="sidebar-desktop">
+      <div class="indice-titulo">
+        <span class="indicador">1</span> 
+        <div class="infoForm">
+          <h4>Step 1</h4>
+          <h3>Your info</h3>
+        </div>
+      </div>
+      <div class="indice-titulo">
+        <span class="indicador">2</span>
+        <div class="infoForm">
+          <h4>Step 2</h3>
+          <h3>Select plan</h3>
+        </div>
+      </div>
+      <div class="indice-titulo">
+        <span class="indicador">3</span>
+        <div class="infoForm">
+          <h4>Step 3</h4>
+          <h3>Add-Ons</h3>
+        </div>
+      </div>
+      <div class="indice-titulo">
+        <span class="indicador">4</span>
+        <div class="infoForm">
+          <h4>Step 4</h4>
+          <h3>Summary</h3>
+        </div>
+      </div>  
+    </div>
+    <!-- Step 1 -->
+    <div class="form-container">
+      <h2>Personal info</h2>
+      <p>Please provide your name, email address, and phone number.</p>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="e.g. Stephen King" >
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" >
+      <label for="telefone">Phone Number</label>
+      <input type="text" id="telefone" placeholder="e.g. +1 234 567 890" >
+    </form>
+    </div>
+    <!-- Step 2 -->
+    <div class="form-container mensal">
+      <h2>Select your plan</h2>
+      <p>You have the option of monthly or yearly billing.</p>
+      <div id="planos">
+      </div>
+      <div id="anual-ou-mensal">
+        <h4 id="p-mensal" class="plano-atual">Monthly</h4>
+        <div id="alterar-plano">
+          <div id="btn"></div>
+        </div>
+        <h4 id="p-anual">Yearly</h4>
+      </div>
+    </div>
+    <!-- Step 3 -->
+    <div class="form-container">
+      <h2>Pick adds-ons</h2>
+      <p>Add-ons help enhance your gaming experience.</p>
+      <div id="servicos">
+        <div class="servico">
+          <div class="caixa">
+          </div>
+          <div class="descricao-servico">
+            <h4>Online service</h4>
+            <p>Access to multiplayer games</p>
+          </div>
+          <div class="preco">+$1/mo</div>
+        </div>
+        <div class="servico">
+          <div class="caixa"></div>
+          <div class="descricao-servico">
+            <h4>Larger storage</h4>
+            <p>Extra 1TB of cloud save</p>
+          </div>
+          <div class="preco">+$2/mo</div>
+        </div>
+        <div class="servico">
+          <div class="caixa"></div>
+          <div class="descricao-servico">
+            <h4>Customizable profile</h4>
+            <p>Custom theme on your profile</p>
+          </div>
+          <div class="preco">+$2/mo</div>
+        </div>
+      </div>
+    </div>
+    <!-- Step 4 -->
+    <div class="form-container">
+      <h2>Finishing up</h2>
+      <p>Double-check everything looks OK before confirming.</p>
+      <div id="tabela">
+        <div id="plano-escolhido">
+          <div id="plano-mudar">
+            <h4 id="plano">Arcade(monthly)</h4>
+            <p id="mudar">Change</p>
+          </div>
+          <div class="servico-preco"><h4>$9/mo</h4></div>
+        </div>
+        <div id="servicos-adicionados">
+          <div class="linha-servico">
+            <p>Online service</p>
+            <div class="servico-preco">+$1/mo</div>
+          </div>
+          <div class="linha-servico">
+            <p>Larger storage</p>
+            <div class="servico-preco">+$2/mo</div>
+          </div>
+        </div>
+      </div>
+      <div id="total">
+        <p>Total (per month)</p>
+        <div class="preco"><h4>+$12/mo</h4></div>
+      </div>
+    </div>
+    <!-- Step 5 -->
+    <div class="form-container">
+      <div id="thanks-message">
+        <img src="assets/images/icon-thank-you.svg" alt="thanks-image">
+        <h2>Thank you</h2>
+        <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loregaming.com.</p>
+      </div>
+    </div>
+    <footer>
+      <h4>Go back</h4>
+      <button>Next Step</button>
+    </footer>
+  </main>
+
+</body>
+</html>
