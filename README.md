@@ -34,7 +34,7 @@ O usuário deve ser capaz de:
 
 ### Links
 
-- Live Site URL: [Live Site URL](https://simonfranklin1.github.io/formulario-multi-step/)
+- Live Site URL: [Formulário Multi-step](https://simonfranklin1.github.io/formulario-multi-step/)
 
 ## Meu processo
 
