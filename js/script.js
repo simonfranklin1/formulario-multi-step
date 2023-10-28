@@ -90,18 +90,18 @@ const confirmarSePodeAvancar = () => {
                 if(telefone == undefined) {
                     inputTelefone.classList.add("input-vazio");
                 }
-                window.alert("Preencha todos os campos!")
+                window.alert("Complete all the fields correctly!")
             }
             break;
         case 1: 
             if(pacote && plano && preco) {
                 avancar = true;
-            } else {window.alert("Preencha todos os campos!")}
+            } else {window.alert("Complete all the fields correctly!")}
             break;
         case 2:
             if(servicosAdicionados > 0) {
                 avancar = true;
-            } else {window.alert("Preencha todos os campos!")}
+            } else {window.alert("Complete all the fields correctly!")}
             break;
         case 3: 
             avancar = true;
@@ -133,11 +133,22 @@ inputName.addEventListener("keyup", (e) => {
     }
 })
 
+function validarEmail(texto) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(texto);
+    
+}
+
 inputEmail.addEventListener("keyup", (e) => {
     email = e.target.value;
     informacoesFormulario = email;
     if(inputEmail.classList.contains("input-vazio")) {
         inputEmail.classList.remove("input-vazio")
+    }
+
+    if(validarEmail(inputEmail.value) == false) {
+        inputEmail.classList.add("input-vazio")
+        email = undefined
     }
 })
 
